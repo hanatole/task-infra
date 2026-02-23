@@ -1,8 +1,7 @@
 services:
-  taskf:
-    image: ahagbes/taskf
-    container_name: taskf
-    hostname: taskf
+  taskp:
+    image: nginx:1.29-alpine3.23
+    container_name: task-proxy
     networks:
       - tasknetwork
 
