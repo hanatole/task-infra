@@ -1,0 +1,12 @@
+services:
+  taskf:
+    image: ahagbes/taskf
+    container_name: taskf
+    hostname: taskf
+    networks:
+      - tasknetwork
+
+networks:
+  tasknetwork:
+    name: tasknetwork
+    external: true
